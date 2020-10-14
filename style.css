@@ -1,0 +1,96 @@
+
+body {
+    margin: 0;
+    font-size: 20px;
+    background: #68BFAA;
+}
+
+
+.container {
+    width: 700px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 30px rgba(106, 106, 106, 0.11);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+#cover{
+	display: none;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.9);
+	z-index: 1;
+}
+
+button {
+    width: 500px;
+    height: 80px;
+    border-radius: 10px;
+    background: #3EAA90;
+    font-size: 20px;
+    color: #fff;
+    margin: 5px 0;
+    box-shadow: 0px 4px 19px rgba(167, 167, 167, 0.25);
+    border:none;
+}
+
+.option{
+	background: none;
+	color:black;
+}
+
+.option:hover{
+	background: #3EAA90;
+}
+
+button:focus {
+    outline: none;
+    background: #3EAA90;
+}
+
+#skipQuestion{
+	background: none;
+	color:#3EAA90;
+	box-shadow: none;
+}
+
+#skipQuestion:focus{
+	color:black;
+}
+
+#gameplace {
+    display: none;
+}
+
+#won, #failed {
+	display: none;
+    width: 351px;
+    height: 351px;
+    border-radius: 50%;
+    background: #3EAA90;
+    margin: 0 auto;
+    z-index: 2;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+}
+
+#failed{
+	background: #873333;
+}
+
+#won p:first-child, #failed p:first-child {
+    padding-top: 30%;
+}
+
+#priceCount{
+	display: flex;
+	justify-content: space-around;
+}
